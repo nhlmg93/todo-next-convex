@@ -3,8 +3,9 @@ import { convex } from "@convex-dev/better-auth/plugins";
 import { betterAuth } from "better-auth";
 import { components } from "./_generated/api";
 import type { DataModel } from "./_generated/dataModel";
-import { query } from "./_generated/server";
+import { mutation, query } from "./_generated/server";
 import authConfig from "./auth.config";
+import { v } from "convex/values";
 
 const siteUrl = process.env.SITE_URL ?? "";
 
